@@ -12,7 +12,8 @@ body {
 
 .container {
     margin-top:40px;
-    width:960px;
+    width:100%;
+    max-width:960px;
     margin-left:auto;
     margin-right:auto;
     overflow:hidden;
@@ -20,5 +21,23 @@ body {
 
 .col-6 {
     float:left;
-    width:480px;
+    width:50%;
+}
+
+@media(max-width:500px) {
+    body {
+        font-size:14px;
+    }
+
+    .col-6 {
+        width:100%;
+    }
+
+    .main-nav {
+        padding:10px;
+    }
+
+    .container {
+        margin-top:10px;
+    }
 }
