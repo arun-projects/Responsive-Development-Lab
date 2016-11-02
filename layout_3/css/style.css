@@ -1,25 +1,39 @@
 body {
     margin:0;
     color:#333;
+    background-color:#EEE;
+    margin-bottom:40px;
 }
 
 a {
     color:#333;
     font-weight:bold;
     text-decoration:none;
-    padding:20px;
+    padding-bottom:20px;
+    display:block;
 }
 
 a:hover {
     color:#06C;
+    border-bottom:#06C 2px solid;
 }
 
 .blue-font {
     color:#06C;
 }
 
+.logo {
+    font-weight:bold;
+    font-size:1.3em;
+}
+
+.logo span {
+    font-weight:normal;
+}
+
 header {
     padding:20px;
+    background-color:#FFF;
 }
 
 .container {
@@ -37,9 +51,10 @@ header {
     text-align:center;
 }
 
-.col-6, .col-2, .col-10, .col-8, .col-4 {
+.col-6, .col-2, .col-10, .col-8, .col-4, .col-3, .col-9 {
     float:left;
     box-sizing:border-box;
+    padding:0 15px;
 }
 
 .col-8 {
@@ -56,4 +71,54 @@ header {
 
 .col-2 {
     width:16.6666666%;
+}
+
+.col-3 {
+    width:25%;
+}
+
+.col-9 {
+    width:75%;
+}
+
+.banner {
+    background:url(../img/sunset.jpg) no-repeat;
+    background-size:cover;
+    height:500px;
+    background-position:center center;
+}
+
+.white-text {
+    color:#FFF;
+}
+
+.demo-item {
+    border:#FFF 2px solid;
+    padding:20px;
+}
+
+.demo-icon {
+    line-height:160px;
+}
+
+.demo-icon i {
+    padding:15px;
+    border-radius:100%;
+    background-color:#06C;
+    color:#FFF;
+}
+
+.margin-top-20 {
+    margin-top:20px;
+}
+
+@media(max-width: 750px) {
+    .col-6, .col-2, .col-10, .col-8, .col-4 {
+        width:100%;
+    }
+
+    .logo {
+        text-align:center;
+        margin-bottom:20px;
+    }
 }
